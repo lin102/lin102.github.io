@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Lin Che</title>
+    <link rel="stylesheet" href="../../css/lin_website.css">
+  </head>
+  <body>
+  	
+	<div class="container">
+	
+	<!--Header fixed navigation bar-->
+	<nav class="row navbar fixed-top navbar-expand-sm border-bottom">
+
+	  <div class="container">
+	  <a class="navbar-brand website-name" href="../../index.html">Lin Che</a>
+	  
+	  <!-- Toggler/collapsibe Button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <!-- Navbar links -->
+	  <div class="collapse navbar-collapse nav-links" id="navbarNav">
+	    <ul class="navbar-nav">
+	      <li class="nav-item active">
+	        <a class="nav-link" href="#">Portfolio</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">Blog</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="../../about.html">About <span class="sr-only">(current)</span></a>
+	      </li>
+	    </ul>
+	  </div>
+	  </div>
+	  
+	</nav>
+	
+	
+<!--main body part-->
+  	<div class="container mainbody-container">
+  	 <div class="row">	
+	  <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"> 
+	  	<h2 class="text-center project-title" > 
+	  		<a href="https://github.com/lin102/RuNow" > Runow - Android APP </a>
+	  	</h2>
+	  </div>	
+	  <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"> 
+	  	<img src="runow.gif" alt="Runow - Android APP" class="img-fluid center-block project-image">
+	  	
+	  	<h4 class="project-subtitle">Description</h4>
+	  	<p>
+	  	   Runow is a Java-based running application for Android. It is designed to help the user to track and record runs and give them information 
+	  	   about various aspects of the run like distance, pace, duration and consumed calories. Runow also saves completed runs records and allows 
+	  	   the user to look back at the recorded data from database and also can delete any record or the whole table. Therefore, it is designed for
+	  	   a various group of users from all age groups with Android devices, interested in running or fitness in general who want to keep track of
+	  	   their runs and personal performance development (concerning the user privacy the data will be only stored in local). It aims to allow the
+	  	   user to run more frequently, better and healthier and safer.
+        </p>
+        <br>
+        
+        <h4 class="project-subtitle">Logo</h4>
+        <img src="runow_logo.png" alt="Runow - logo" class="img-fluid center-block project-image">
+        <p>
+        	The symbol is a running person which represent the core theme of this app.
+            The green color schema shows a healthy running life style in the nature.	
+        </p>
+        
+        <h4 class="project-subtitle">Splash screen</h4>
+        <img src="splashscreen.png" alt="Splash screen" class="img-fluid center-block project-image">
+        <p>
+        	The starting page shows the app logo and the name in the middle of the page. 
+        	It introduces the colour concept of the app and leads directly to the main page of the application. 
+        	At the bottom of the page, copyright is remarked.<br>
+        	This app is a group project for Mobile Cartography course.<br>
+        	Group members: Lin Che, Zhenyu Wei, Yingwen Deng, Vreni Preußler
+        </p>
+        
+        
+        <h4 class="project-subtitle">MAIN ACTIVITY</h4>
+          <img src="mainactivity.png" alt="Main activity" class="img-fluid center-block project-image">
+        <p>
+        	At the top of the main activity, the switch button —“Theme” for different themes - day and night mode is placed on the left corner which user can choose freely while running. Next to it in the right upper corner, a button called “History” that leads to another page with the records of runs which user can manipulate.<br>
+			The main activity of the application consists mostly of a map fragment that shows the current location on a Google Maps Interface while running. During the run a multi-coloured line shows the track depending on the pace of runners.The line symbolises the pace of the run in three colours (red – yellow – green) which is corresponding to three different ranges of pace, red represents slow and green represent fast.<br>
+			Below the map there is a dashboard with the information that are gathered while the user is running. The app is controlled via three buttons at the bottom of the page.<br>
+            Via “start” button the new running activity is started. While the user is running, certain variables are gathered and displayed below the map fragment in respective TextViews, like distance, pace, duration of the run and burned calories. The logo turns into a “pause” button as soon as an activity is started and stops the tracking of the run and the calculation of the variables momentarily until the run is continued via the same button means “resume” now. The “stop” button ends the recording of the run and adds the tracked run to the run history(the local database), along with all calculated variables. 
+        </p>
+        
+        
+        <h4 class="project-subtitle">Theme Switch</h4>
+        <img src="theme.png" alt="Theme Switch" class="img-fluid center-block project-image">
+        <p>
+	        In this application we provide the day mode and night mode for better user experience during different lighting situation by toggling the switch. With the day mode, 
+	        the UI is themed in a lighter colour tone of matching colour scheme as well as a customised styled map which is less detailed but actually tailored to the usage of runners during running. 
+	        For example, it enhances the streets/parks and marked out the public transportation stations/highways which could be useful information for runners. With the night mode, the UI is themed in a darker colour tone as well as the google map with matching colour scheme to the entire design.
+	    </p>
+	    
+	    
+	    <h4 class="project-subtitle">History Records</h4>
+        <img src="history.png" alt="History Records" class="img-fluid center-block project-image">
+        <p>
+	      The button with “memory” icon on the top right corner in the main activity of the app leads to the record page. Via the “BACK” button, 
+	      which is left of the “trash” button, the user is redirected to the main page. And via the “trash” button, you can clear all of the records (the whole table) at once.
+	      In addition, it also enables users to delete single entries with the “delete” button on the beginning of each row. On the record page, the run entries with time and calculated data including the ID for each entires, 
+	      distances and consumed calories are listed in the main TextView.
+        </p>
+        
+        
+        <h4 class="project-subtitle">Hidden Surprise (points of interest) </h4>
+        <img src="superise.png" alt="superise" class="img-fluid center-block project-image">
+        <p>
+			In this running application, we also include an internal function of pop-out points of interest with placeholders when the users approach some certain feature objects while running.<br>
+			The places are: 1. Alte Mensa (51.0264519,13.7262368) 2. SLUB (51.029106, 13.724735) and 3. Hülsse-Bau (51.029029, 13.736457)<br>
+			The threshold is set to 30m which means when runner approach the above places within 30m the Icon will pop up as a hidden surprise of this app.<br>
+			This internal function of exploring points of interest spices up the running experience in a surprising way.
+
+        </p>
+	    <br>
+	    
+        <a href="runow-app-release.zip" class="downloadable"> 
+         	<h4>Download Runow app android apk</h4>
+        </a>
+        <a href="https://github.com/lin102/RuNow" class="downloadable"> 
+         	<h4>Visit the project on my github</h4>
+        </a>
+         
+	  </div>
+  	
+  	</div>
+  	
+    </div>
+  	</div>
+  	
+  	
+    <!--footer-->
+  	<footer class="footer border-top">
+  		<div class="container">
+  		<div class="row">	
+  		<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6"> 
+  		  <h5 class="website-name">Lin Che</h5>
+  		  <a href="mailto:lin.che@tum.de">lin.che@tum.de</a>
+  		  <br>
+  		  <a href="https://github.com/lin102">lin102.github</a>
+        </div>
+       
+        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">    
+	        <div class="social">			
+						<ul>
+						<li class="facebook"><a href="https://www.facebook.com/linche102">Facebook</a></li>
+						<li class="linkedin"><a href="https://www.linkedin.com/in/linche/">LinkedIn</a></li>
+						<li class="github"><a href="https://github.com/lin102">Github</a></li>
+						<li class="twitter"><a href="https://twitter.com/linche102">Twitter</a></li>
+
+
+						</ul>		
+			    </div>
+        </div>
+        
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"> 
+        	<p class="copyright">
+        	 Copyright© 2019 Lin Che. Opinions are solely my own
+        	</p>
+        </div>	
+        
+      </div>
+  	</div>
+  	</footer>  	
+  	
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

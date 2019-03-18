@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Lin Che</title>
+    <link rel="stylesheet" href="../../css/lin_website.css">
+  </head>
+  <body>
+  	
+	<div class="container">
+	
+	<!--Header fixed navigation bar-->
+	<nav class="row navbar fixed-top navbar-expand-sm border-bottom">
+
+	  <div class="container">
+	  <a class="navbar-brand website-name" href="../../index.html">Lin Che</a>
+	  
+	  <!-- Toggler/collapsibe Button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <!-- Navbar links -->
+	  <div class="collapse navbar-collapse nav-links" id="navbarNav">
+	    <ul class="navbar-nav">
+	      <li class="nav-item active">
+	        <a class="nav-link" href="#">Portfolio</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">Blog</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="../../about.html">About <span class="sr-only">(current)</span></a>
+	      </li>
+	    </ul>
+	  </div>
+	  </div>
+	  
+	</nav>
+	
+	
+  	<!--main body part-->
+  	<div class="container mainbody-container">
+	  <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"> 
+	  	<h2 class="text-center project-title" > 
+	  		<a href="https://github.com/lin102/smooth-shortest-path" > Smooth Path Algorithm </a>
+	  	</h2>
+	  </div>	
+	  <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"> 
+	  	 <img src="smoothpath.png" alt="Smooth Path Algorithm" class="img-fluid center-block project-image">
+	  	<h4 class="project-subtitle">Demand</h4>
+	  	<p>As known to us all, there are many terrific, well-developed shortest path algorithms. However, in reality, there are always more factors need to be taken into consideration. For instance, when a railway route is being planned and designing before construction, the route between the departure point and destination not only needs to be short but also need to be “smooth” which means the whole route need to be constantly under a certain gradient so the train could run safely.
+			This algorithm is designed to solve this kind of problems.
+        </p>
+        <br>
+        
+        <h4 class="project-subtitle">Algorithm description</h4>
+        <p> 
+			The basic idea is adding a gradient constraint to the Dijkstra algorithm.<br>
+			The data is a TIFF DEM raster image containing the geographic coordinates and elevation.<br>
+			The output is a polyline shapefile (.shp) if it exists.
+         </p>
+         <br>
+         
+         <h4 class="project-subtitle">Implementation and challenges</h4>
+         <p>
+			<h6>1. Abstract DEM TIFF to graph</h6>
+			The shortest path algorithm should be implemented in a graph. My workflow is:<br>
+			a.    Transfer TIFF raster to a numpy array<br>
+			b.    Each cell has 8 connecting nodes except cells around the border (validation). [3 *3] mask.<br>
+			c.    The transform from raster to an array will lose the geographic coordinates information. So deriving a coordinates array for distance comparison is necessary. (using Haversine formula)<br>
+			<br>
+			<h6>2. Break condition of the Loop</h6>
+			If there is no gradient constraint, the break condition could be all the cells are visited and the algorithm outputs global shortest paths for every pair of points in this graph.<br>
+			Since taking the gradient into consideration, you can not know if the start point or end point will be visited or not. So you cannot know how the final visited array would look like then there is no way to break the loop. (I still cannot think of a good way of finding the shortest path for every pair of points in the graph). <br>
+			Fortunately, in our case, I only need to find the shortest path for the given pair of points. It would make the condition much easier and more effective. <br>
+			The condition is when the endpoint is visited the loop can break, also even the endpoint is not visited but there is no node can be visited, break! which means that based on the given start and end point and the gradient threshold there is no path meet the requirement of the user. Give an error message to inform the user to try other parameters.<br>
+			<br>
+			<h6>3. Time and space complexity</h6>
+			by changing the break condition to if find the endpoint improved the efficiency of this algorithm a little bit. However, due to the 2-dimension searching and the characteristic of the geographic path the time complexity of this algorithm is still O(n^2).<br>
+			Any advice about improving this algorithm is more than welcomed.
+         </p>
+         <br>
+         
+         <h4 class="project-subtitle">Input data</h4>
+         <p>STRM DEM TIFF image</p>
+	  	 <img src="DEM.png" alt="DEM" class="img-fluid center-block project-image">
+         <br>
+         
+         <h4 class="project-subtitle">Arctool box</h4>
+         <p>shortest distance path with gradient</p>
+	  	 <img src="arctoolbox.png" alt="arctool box" class="img-fluid center-block project-image"> 
+         <br>
+         
+         <h4 class="project-subtitle">Output</h4>
+         <p>shortest distance path with gradient shape file(.shp)</p>
+         <img src="output.png" alt="output shapefile" class="img-fluid center-block project-image">
+         <br>
+         
+         
+         <a href="Path calculation tools.zip" class="downloadable"> 
+         	<h4>Download Arctool box</h4>
+         </a>	
+         <a href="SSPath.zip" class="downloadable"> 
+         	<h4>Download Source code</h4>
+         </a>
+         <a href="https://github.com/lin102/smooth-shortest-path" class="downloadable"> 
+         	<h4>Visit the project on my github</h4>
+         </a>
+         
+	  </div>
+  	
+  	</div>
+  	
+
+  	</div>
+  	
+  	
+    <!--footer-->
+  	<footer class="footer border-top">
+  		<div class="container">
+  		<div class="row">	
+  		<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6"> 
+  		  <h5 class="website-name">Lin Che</h5>
+  		  <a href="mailto:lin.che@tum.de">lin.che@tum.de</a>
+  		  <br>
+  		  <a href="https://github.com/lin102">lin102.github</a>
+        </div>
+       
+        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">    
+	        <div class="social">			
+						<ul>
+						<li class="facebook"><a href="https://www.facebook.com/linche102">Facebook</a></li>
+						<li class="linkedin"><a href="https://www.linkedin.com/in/linche/">LinkedIn</a></li>
+						<li class="github"><a href="https://github.com/lin102">Github</a></li>
+						<li class="twitter"><a href="https://twitter.com/linche102">Twitter</a></li>
+
+
+						</ul>		
+			    </div>
+        </div>
+        
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"> 
+        	<p class="copyright">
+        	 Copyright© 2019 Lin Che. Opinions are solely my own
+        	</p>
+        </div>	
+        
+       </div>
+  		</div>
+  	</footer>  	
+  	
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
+
