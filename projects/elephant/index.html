@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>The Elephants</title>
+	<link href='https://fonts.googleapis.com/css?family=Allura' rel='stylesheet'>
+	<link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
+	<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.42.2/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.42.2/mapbox-gl.css' rel='stylesheet' />
+    <link href="css/elephantcss.css" rel="stylesheet" type="text/css"/>
+    <link href="css/svg_style.css" rel="stylesheet" type="text/css"/>	
+    <link rel="stylesheet" href="http://unpkg.com/leaflet@1.0.3/dist/leaflet.css">
+    <script src="http://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="css/slideshowcss.css" rel="stylesheet" type="text/css"/>	
+    <link href='https://fonts.googleapis.com/css?family=Allura' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
+    <script type="text/javascript" src='js/leaflet.curve.js'></script>
+
+</head>
+
+<body>
+
+<div class="slideshow-container">
+	<div class="mySlides fade"  id="slide1">
+		<div class="title_text">The Trace of Elephants</div>
+	</div>
+	
+	<div class="mySlides fade" id="slide2">
+		<div class="title_text">The Trace of Elephants</div>
+	</div>
+	
+	<div class="mySlides fade" id="slide3">
+		<div class="title_text">The Trace of Elephants</div>
+	</div>
+<!-- The dots/circles -->
+	<div id="ThreeDot" >
+		<span class="dot" onclick="currentSlide(1)"></span> 
+		<span class="dot" onclick="currentSlide(2)"></span> 
+		<span class="dot" onclick="currentSlide(3)"></span> 
+	</div>	
+	<div class="scroll-down"></div>
+</div>
+
+<div class="quote-container">
+     <div id="quote-text-container">
+	<h4>"No one in the world needs an elephant tusk but an elephant."</h4>
+	<h5>--Thomas Schmidt</h5>
+	</div>
+</div>
+<div class="map-title-box1">
+	     <div class="firstmap-title">
+	     	<p id="banner01">The Distribution of Elephants<p>
+	     </div>
+ </div>
+
+<div class="map-container1">
+    <div id="AsianDistribution_text">
+	<p id="asian_text">In 2008, the IUCN listed the Asian elephant as endangered due to a 50% population decline over the past 60 to 75 years. 
+	Asian elephants once ranged from Syria and Iraq to China (up to the Yellow River) and Java. 
+	It is now extinct in these areas and the current range of Asian elephants is highly fragmented.
+	The total population of Asian elephants is estimated to be around 40,000 to 50,000, although this may be a loose estimate. 
+	It is likely that around half of the population is in India.
+	</p>
+	<p id="source_text"><small>&nbsp--Wikipedia, https://en.wikipedia.org/wiki/Elephant</small></p>
+	</div>
+	
+	<div  id="asian_elephant_map">
+	 <embed class="embedsvg" src="img/asia elephants.svg" type="image/svg+xml"/>
+	</div>	
+	
+</div>
+<div class="map-container2">   
+	<div  id="african_elephant_map">
+		<embed class="embedsvg" src="img/africa elephants.svg" type="image/svg+xml"/>
+	</div>
+	<div id="AfricanDistribution_text">
+		<p id="african_text">In 1979, Africa had an estimated minimum population of 1.3 million elephants, 
+		with a possible upper limit of 3.0 million; by 1989, the population was estimated to be 609,000.
+		Conversely, studies in 2005 and 2007 found populations in eastern and southern Africa were increasing by an average annual rate of 4.0%.
+		The International Union for Conservation of Nature (IUCN) estimates a total of around 440,000 individuals for 2012. 
+		African elephants receive at least some legal protection in every country where they are found, but 70% of their range exists outside protected areas. 
+		Successful conservation efforts in certain areas have led to high population densities. Large efforts are taken to raise awareness of the value of elephants, 
+		to help mitigate human-elephant conflicts, and to promote anti-poaching activities.</p>
+		</p>
+		<p id="source_text"><small>&nbsp--Wikipedia, https://en.wikipedia.org/wiki/Elephant</small></p>
+	</div>
+  
+</div>
+<div class="map-title-box2">
+	     <div class="firstmap-title">
+	     	<p id="banner01">Elephant Safari in Africa<p>
+	     </div>
+ </div>
+<div class="parallax" >
+	<div class="front0"> 
+		<p>
+		Elephants are large mammals of the family Elephantidae and the order Proboscidea.
+		Three species are currently recognised: the African bush elephant, the African forest elephant, and the Asian elephant. 
+		In this map, you will be guided through the continent of Africa. 
+		<br>
+		Following this route, you can sightseeing through the 12 national parks where you can get to know more about the habitats of African elephants.
+		</p>
+	</div>
+</div>
+<div class="parallax">
+<div class="front1"> 
+	<h2>Samburu National Reserve <br>– Kenya</h2>
+	<p>
+	Samburu National Reserve is a game reserve on the banks of the Ewaso Ng'iro River in Kenya. The park is 165 km² in size and is situated 350 kilometers from Nairobi. It ranges in altitude from 800 to 1,230 m above sea level.
+	Over 900 elephants live in or are visiting the Samburu Reserve throughout the year. The Samburu-Laikipia ecosystem hosts about 5,400 elephants in the area of around 28 490 km².<br/><a class="text-source" href="https://en.wikipedia.org/wiki/Samburu_National_Reserve">--Wikipedia, https://en.wikipedia.org/wiki/Samburu_National_Reserve</a>
+	</p>
+	<img id="elephant_images" src="img/SamburuNationalReserveKenya.png" alt="SamburuNationalReserveKenya"  title="SamburuNationalReserveKenya">
+</div>
+</div>
+<div class="front2"> 
+	<h2>Amboseli National Park<br>– Kenya</h2>
+	<p>
+	Amboseli National Park, formerly Maasai Amboseli Game Reserve, covers around 392 km² and around 1,500 elephants live here. The local people are mainly Maasai, but people from other parts of the country have settled here attracted by the successful tourist-driven economy and intensive agriculture along the system of swamps that makes this low-rainfall area one of the best wildlife-viewing experiences in the world. It is the second-most popular national park in Kenya.
+	It has a reputation to be the best place in Africa to get up close to free-ranging elephants and herds of up to 100 elephants with scenic Mount Kilimanjaro in the background.<br/><a class="text-source" href="https://en.wikipedia.org/wiki/Amboseli_National_Park">--Wikipedia, https://en.wikipedia.org/wiki/Amboseli_National_Park</a>
+	</p>
+	<img id="elephant_images" src="img/Amboseli National Park – Kenya.jpg" alt="Amboseli_National_Park_Kenya"  title="Amboseli_National_Park_Kenya">
+</div>
+<div class="parallax"></div>
+<div class="front1"> 
+	<h2>Serengeti National Park<br>– Tanzania</h2>
+	<p>
+	Serengeti National Park is Tanzania's largest and most famous park. Established in 1951, it gets its name from the Masaai 
+	word Siringet meaning 'Endless Plain'. It covers over 14 000 km² of grassland plains and savannah, and hosts around 2,000 elephants. It is part of Northern Tanzania Safari Circuit.<br/><a class="text-source" href="https://en.wikipedia.org/wiki/Serengeti_National_Park">--Wikipedia, https://en.wikipedia.org/wiki/Serengeti_National_Park</a>
+	</p>
+	<img id="elephant_images" src="img/SerengetiNationalParkTanzania.png" alt="SerengetiNationalParkTanzania"  title="SerengetiNationalParkTanzania">
+</div>
+<div id="leaf-map">
+</div>
+<div class="parallax"></div>
+<div class="front2"> 
+	<h2>South Luangwa National Park<br>– Tanzania</h2>
+	<p>
+		South Luangwa Park is Zambia’s top game viewing destination and one of Africa's greatest wildlife parks. Founded as a game reserve in 1938, it became a national park in 1972 and now covers 9,050 km². It is located in the valley of the Luangwa River. Roughly
+		10,000 elephants inhabit the South Luangwa Park, in large elephant herds up to 70 individuals strong.<br/><a class="text-source" href="https://en.wikipedia.org/wiki/South_Luangwa_National_Park">--Wikipedia, https://en.wikipedia.org/wiki/South_Luangwa_National_Park</a>
+	</p>
+	<img id="elephant_images" src="img/SouthLuangwaNationalParkZambia.png" alt="SouthLuangwaNationalParkZambia"  title="SouthLuangwaNationalParkZambia">
+</div>
+<div class="parallax"></div>
+
+<div class="front1"> 
+	<h2>Hwange National Park<br>– Zimbabwe</h2>
+	<p>
+		Hwange National Park (formerly Wankie Game Reserve) is the largest natural reserve in Zimbabwe. It is one of Africa's elephant strongholds with huge population of about 44,000 elephants in
+		an area of 14 651 km². It was founded in 1928 as a Game Reserve, in 1961 as a National Park.<br/><a class="text-source" href="https://en.wikipedia.org/wiki/Hwange_National_Park">--Wikipedia, https://en.wikipedia.org/wiki/Hwange_National_Park</a>
+	</p>
+	<img  id="elephant_images" src="img/HwangeNationalParkZimbabwe.png" alt="HwangeNationalParkZimbabwe"  title="HwangeNationalParkZimbabwe">
+</div>
+</div>
+<div class="parallax"></div>
+
+<div class="front2"> 
+	<h2>Chobe National Park & Delta<br>– Botswana</h2>
+	<p>
+		Chobe National Park is Botswana's first national park, and also the most biologically diverse. Located in the north of the country, it is Botswana's third largest park and has one of the greatest concentrations of game in all of Africa. It was established in 1967 and it covers area of 11,700 km². It is home to one of the largest concentrations of elephants in Africa, estimated at 
+		around 70 000 elephants. It is said that hosts the largest elephants in terms of body size.<br/><a class="text-source" href="https://en.wikipedia.org/wiki/Chobe_National_Park">--Wikipedia, https://en.wikipedia.org/wiki/Chobe_National_Park</a>
+	</p>
+	<img id="elephant_images" src="img/Chobe_National_Park_Delta_Botswana.png" alt="Chobe_National_Park_Delta_Botswana"  title="Chobe_National_Park_Delta_Botswana">
+</div>
+<div class="parallax"></div>
+
+<div class="front1"> 
+	<h2>Etosha National Park <br>– Namibia</h2>
+	<p>
+		Etosha National Park is a national park in northwestern Namibia. The park was proclaimed a game reserve in 1907; in 1958 it became Etosha Game Park and was elevated to status of National Park in 1967. It spans an area of 22,270 km² and gets its name from the large Etosha pan which is almost entirely within the park. It hosts over 2,000 elephants.
+		Herds of elephants congregate at the waterholes of Etosha, especially in the dry season.<br/><a class="text-source" href="https://en.wikipedia.org/wiki/Etosha_National_Park">--Wikipedia, https://en.wikipedia.org/wiki/Etosha_National_Park</a>
+	</p>
+	<img id="elephant_images" src="img/EtoshaNationalParkNamibia.png" alt="EtoshaNationalParkNamibia"  title="EtoshaNationalParkNamibia">
+</div>
+<div class="parallax"></div>
+
+<div class="front2"> 
+	<h2>Kruger National Park <br>– South Africa</h2>
+	<p>
+		Kruger National Park is one of the largest game reserves in Africa. It covers an area of 19,485 km² in northeastern South Africa. Areas of the park were first protected by the government of the South African Republic in 1898, and it became South Africa's first national park in 1926. The park is part of the "Kruger to Canyons Biosphere", 
+		an area designated by the UNESCO as an International Man and Biosphere Reserve. You can find about 15,000 elephants in the park, which are relatively habituated.<br/><a class="text-source" href="https://en.wikipedia.org/wiki/Kruger_National_Park">--Wikipedia, https://en.wikipedia.org/wiki/Kruger_National_Park</a>
+	</p>
+	<img id="elephant_images" src="img/KrugerNationalParkSouthAfrica.png" alt="KrugerNationalParkSouthAfrica"  title="KrugerNationalParkSouthAfrica">
+</div>
+<div class="parallax"></div>
+
+<div class="front1"> 
+	<h2>Addo Elephant National Park<br>– South Africa</h2>
+	<p>
+	Addo Elephant National Park is a diverse wildlife conservation park situated close to Port Elizabeth in South Africa and is one of the country's 19 national parks. It currently ranks third in size in the country. The original section of the park was founded in 1931 in order to provide a sanctuary for the eleven remaining elephants in the area. The park has proved to be very successful and currently houses more than 600 elephants and a large number of other mammals in the area of 1,640 km²
+	(home to one of the densest African elephant populations on earth).<br/><a class="text-source" href="https://en.wikipedia.org/wiki/Addo_Elephant_National_Park">--Wikipedia, https://en.wikipedia.org/wiki/Addo_Elephant_National_Park</a>
+	</p>
+	<img id="elephant_images" src="img/Addo Elephant National Park - South Africa.jpg" alt="Addo Elephant National Park - South Africa"  title="Addo Elephant National Park - South Africa">
+</div>
+<div class="parallax"></div>
+<div class="footer">
+	<p> Created by Lin Che, Yingwen Deng & Marko Tošić <p>
+    <p> Contact: lin.che@tum.de<p>
+    <p> Content of this project are from wikipedia, https://en.wikipedia.org/wiki/Elephant<p>
+	<p>	All content and project are licensed under
+        Creative Commons Attribution-ShareAlike License
+        Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)
+        https://creativecommons.org/licenses/by-sa/3.0/<p>
+</div>
+<script type="text/javascript" src="js/elephant.js"></script>
+</body>
+</html>

@@ -10,6 +10,8 @@
 
     <title>Lin Che</title>
     <link rel="stylesheet" href="../../css/lin_website.css">
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <link href="income.css" rel="stylesheet" type="text/css"/>
   </head>
   <body>
   	
@@ -50,26 +52,38 @@
   	 <div class="row">	
 	  <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"> 
 	  	<h2 class="text-center project-title" > 
-	  	 Tag & Emoji Map
+	  	 Gender wage gap in Austria
 	  	</h2>
 	  </div>	
 	  <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"> 
-	  	<a href="tagmaps.svg">
-	  	<img src="tagmap.jpg" alt="Tag & Emoji Map" class="img-fluid center-block project-image thumb-img">
-	  	</a>
-	  	<h4 class="project-subtitle">Description</h4>
-	  	<p>
-	  	   This map is created in the Tag & Emoji Maps Workshop under the guidance of Dr.-Ing Alexander Dunkel. 
-         <br>
-         This is a tag map for Dresden, Germany from about 500.000 spatially referenced Instagram, Twitter and Flickr Tweets, Photos and Emoji.
-      </p>
-      <br>
+	  	<svg class="map" id="map1" viewBox="0 0 800 400">
+			<g class="mapRoot"></g>
+		</svg>
+		</div>
+		<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+	  <button id="overallIncomeButton" type="button" class="btn btn-success btn-lg">Overall</button>
+		<button id="medianIncomeM_Button" type="button" class="btn btn-success btn-lg">Male</button>
+		<button id="medianIncomeF_Button" type="button" class="btn btn-success btn-lg">Female</button>
+	  </div>
+	  <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+	  <br>
+  	<h4 class="project-subtitle">Description</h4>
+  	<p>
+	  	In 2013, 50% of women in Austria earned more than 1890 euros - in the case of male workers, the gross median income was over 900 euros higher at 2786 euros. In addition to many other factors, different gender-specific training levels , the regional economic structure and divergent part-time rates lead to a spatially diverse picture of the income situation of women and men. 	
+	  	<br>
+	  	<br>
+	  	Data status 2013. Source: STATcube - Statistical database of STATISTICS AUSTRIA, own processing. Map data: OpenStreetMap and contributors. 
+	  	<br>
+	  	D3.js and bootstrap are used for visualizing the data in this project.
+	  </p>
+    <br>
+  
 	  </div>
   	</div>
     </div>
   	</div>
-  	
-  	
+  
+  
     <!--footer-->
   	<footer class="footer border-top">
   		<div class="container">
@@ -102,8 +116,10 @@
         
       </div>
   	</div>
-  	</footer>  	
+  	</footer>  
   	
+  	
+<script type="text/javascript" src='income.js'></script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

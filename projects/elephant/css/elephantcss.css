@@ -1,0 +1,490 @@
+
+        
+body,html{
+	background-color:rgba(75, 101, 132,1.0) ;	
+	height:100%;
+	margin:0;
+	padding:0;
+}
+
+.quote-container{
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+    background-color: white;
+    width: 100%;
+    height: 110%;
+    text-align: center;
+    z-index: 5;
+    overflow: auto;
+}
+#quote-text-container{
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 22%;
+}
+.quote-container h4{
+	font-size: 2.5em;	
+	opacity: 0.6;
+	font-family: 'Cormorant Garamond', serif;
+}
+.quote-container h5{
+	font-size: 1.5em;	
+	opacity: 0.6;
+	font-family: 'Cormorant Garamond', serif;
+}
+
+.map-title-box1{
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+    width: 100%;
+    text-align: center;
+    z-index: 5;
+    overflow: auto;
+	height: 200px;
+    background-image: url(../img/title1img200.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.map-title-box2{
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+    width: 100%;
+    text-align: center;
+    z-index: 5;
+    overflow: auto;
+	height: 200px;
+    background-image: url(../img/banner2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#banner01{
+	margin:1.4em;
+	text-align: center;
+	font-size: 3em;
+	font-family: 'Cormorant Garamond', serif;
+	font-weight:600;
+	
+}
+
+#source_text{
+	color:black;
+}
+.map-container1{
+	position: relative;
+	margin:0;
+    background-color: white;
+    width: 100%;
+	height:500px;
+    z-index: 7;
+    overflow: auto;
+	
+}
+
+.map-container2{
+	position: relative;
+	margin-left: 0;
+	margin-right: 0;
+    background-color: white;
+    width: 100%;
+	height:600px;
+    z-index: 7;
+    overflow: auto;
+	
+}
+
+#AsianDistribution_text{
+	 position:absolute;
+	 left:2%;
+	display:inline-block;
+	width:40%;
+	padding:0;
+	margin-left:4em;
+	margin-top:3em;
+	margin-bottom:3em;
+	z-index: 7;
+	 text-align:justify;
+}
+
+#asian_text{
+	position:relative;	
+	font-size: 1.6em;
+	font-family: 'Cormorant Garamond', serif;
+	color:black;
+}
+
+#asian_elephant_map{
+	position:absolute;
+	display:inline-block;
+	width:45%;
+	height:80%;
+	z-index: 7;
+	top:13%;
+	right:7%;
+	background-repeat: no-repeat;
+    background-size: contain;
+	margin:0em;
+}
+
+#AfricanDistribution_text{
+	display:inline-block;
+	width:45%;
+	padding:0;
+	margin-left:0px;
+	margin-right:3em;
+	margin-top:0em;
+	margin-bottom:3em;
+	 z-index: 7;
+	 position:absolute;
+	 right:3%;
+	 text-align:justify;
+}
+
+#african_text{
+	position:relative;	
+	font-size: 1.6em;
+	font-family: 'Cormorant Garamond', serif;
+	color:black;
+}
+
+#african_elephant_map{
+	position:absolute;
+	display:inline-block;
+	width:40%;
+	height:80%;
+	z-index: 7;
+	top:2%;
+	left:10%;
+	background-repeat: no-repeat;
+    background-size: contain;
+	margin-left:0;
+}
+
+ #leaf-map{
+       	position: fixed;
+       	width: 100%;
+        height: 100%;
+        top: 0%;
+        bottom: 0%;
+        right:0%;
+        z-index:1;
+       }
+
+.parallax {
+    /* Full height */
+    height: 1200px; 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	z-index: 0;
+}
+
+h1{
+	margin:1em;
+	color:white;
+	font-family: 'Allura';
+	text-align: center;
+	font-weight:bold;
+	font-size: 4em;	
+}
+
+.title1{
+	z-index: 2;
+	background-color:rgba(75, 101, 132,1.0) ;	
+	width:100%;
+	position:absolute;
+}
+
+h2{
+	padding:0.5em;
+	margin:0em;
+	color:white;
+	font-family: 'EB Garamond', serif;
+	text-align: center;
+	font-weight:bold;
+	font-size: 1.4em;
+}
+p{
+	
+	margin:0.5em;
+	
+}
+.front0{
+	position:absolute;
+	
+	left:20%;
+	top:50%;
+	width:60%;
+	height:auto;
+	margin:auto;
+	color:white;
+	background-color:rgba(127, 143, 166,0.6);
+	font-family:  'EB Garamond', serif;
+	font-size:2em;
+	z-index:2;
+}
+.front1{
+	position:absolute;
+	height:auto;
+	width:45%;
+	margin:3em;
+	color:white;
+	background-color:rgba(127, 143, 166,0.6);
+	font-family:  'EB Garamond', serif;
+	font-size:1.3em;
+	z-index:2;
+	text-align: justify;
+}
+
+.front2{
+	position:absolute;
+	left:50%;
+	height:auto;
+	width:45%;
+	
+	color:white;
+	background-color:rgba(127, 143, 166,0.6);
+	font-family:  'EB Garamond', serif;
+	font-size:1.3em;
+	z-index:2;
+	text-align:justify;
+}
+
+.front3{
+	position:absolute;
+	text-align:justify;
+	height:auto;
+	width:100%;
+	margin:auto;
+	color:white;
+	background-color:rgba(75, 101, 132,0.8);
+	font-family:  'EB Garamond', serif;
+	font-size:1.6em;
+	z-index:2;
+}
+
+#elephant_images{
+    width: 100%;
+    height: auto;
+	text-align: middle;  
+}
+
+p{
+	color:white;
+}
+
+.footer{
+	z-index:99;
+	position:relative;
+	text-align:center;
+	padding:1em;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color:rgba(75, 101, 132,1.0);
+	font-size:20px;
+}
+.leaflet-control-zoom{
+	visibility: hidden;
+}
+.text-source{
+	font-size: 0.8em;
+	color: dimgrey;
+}
+.text-source:hover{
+	color: white;
+}
+
+/*responsive design*/
+/*@media only screen and (max-device-width: 1366px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+} */
+ @media  (max-width: 1250px) {
+ 	#asian_elephant_map{
+    height: 60%;
+	top:10%;
+	right:10%;
+	}
+	#asian_text{
+		font-size:1.2em;
+	}	
+	#african_text{
+		font-size:1.2em;
+	}	
+	#african_elephant_map{
+		left:2%;
+	}
+	#AsianDistribution_text{
+	left:0%;	
+	margin-top: 3em;
+	margin-left: 3em;
+	}
+	.embedsvg{
+		width: 100%;
+		height: auto;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+ }
+ 
+ @media  (max-width: 1000px) {
+	.front0{ 
+	top:60%;
+	font-size:1.6em;
+	}	 	
+	#asian_text{
+		font-size:1.1em;
+	}	
+	#african_text{
+		font-size:1.1em;
+	}
+
+		.quote-container h4{
+	font-size: 2em;	
+	
+	}
+	.quote-container h5{
+	font-size: 1.3em;	
+	
+	}
+
+ }
+
+ @media  (max-width: 900px) {
+	.front0{ 
+		top:50%;
+		font-size:1.2em;
+		text-align:center;  
+	}	
+	.front1{
+	
+		font-size:1em;
+	}
+	h2{
+	font-size: 1.2em;
+	padding:0.7em;
+	}
+	.front2{
+		font-size:1em;
+	}
+	
+	.front3{
+	font-size:1.2em;
+	}
+	.quote-container h4{
+	font-size: 1.8em;	
+	
+	}
+	.quote-container h5{
+	font-size: 1em;	
+	}
+	#asian_elephant_map{
+	width:100%;
+	height:90%;
+	top:5%;
+	right:2%;
+	}
+	#african_elephant_map{
+	width:90%;
+	height:90%;
+	left: 2%;
+	}
+	  #AsianDistribution_text{
+		  display:none;
+	  }
+	   #AfricanDistribution_text{
+		  display:none;
+	  }
+ }
+
+  
+ @media  (max-width: 700px) {
+	 .front0{ 
+	top:50%;
+	
+	}	
+	.front1 p{
+	display: none;
+	 }
+	 .front2 p{
+	display: none;
+	 }
+	h2{
+	font-size: 1em;
+	padding:0.7em;
+}
+	.quote-container h4{
+	font-size: 1.5em;	
+	
+	}
+	.quote-container h5{
+	font-size: 0.8em;	
+	
+	}
+	#AsianDistribution_text{
+		left:0%;
+		}
+	#asian_text{
+		font-size:1em;
+	}	
+	#african_text{
+		font-size:1em;
+	}
+	
+	#quote-text-container{
+	margin-top: 30%;
+	}
+	#banner01{
+	font-size: 2.3em;
+	margin:1.5em;
+	} 
+	
+ }
+
+ @media  (max-width: 600px) {
+	.embedsvg{
+		display: none;
+	}
+	#AsianDistribution_text{
+		display:none;
+		}
+	#asian_elephant_map{
+	width:90%;
+	height:90%;
+	top:5%;
+	left:2%;
+	background-image: url(../img/asia_elephants2.png);
+	}
+	
+	#african_elephant_map{
+	background-image: url(../img/africa_elephants2.png);
+	}
+	#AfricanDistribution_text{
+		display:none;
+		}
+ }
+ 
+  @media  (max-width: 370px) {
+		#banner01{
+	font-size: 1.7em;
+	margin:2.3em;
+	} 
+ }
+ 
+@keyframes markerFade { 
+  from { opacity: 0.5; } 
+}
+
+.blinking {
+  animation: markerFade 1s infinite alternate;
+}

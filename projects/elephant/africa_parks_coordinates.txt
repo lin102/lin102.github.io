@@ -1,0 +1,26 @@
+1. Samburu National Reserve - Kenya
+0.580610, 37.522751
+
+2. Amboseli National Park - Kenya
+-2.650977, 37.258198
+
+3. Serengeti National Park - Tanzania
+-2.337577, 34.833289
+
+4. South Luangwa National Park - Zambia
+-13.031022, 31.545922
+
+5. Hwange National Park - Zimbabwe
+-19.160191, 26.588315
+
+6. Chobe National Park & Delta - Botswana
+-18.711140, 24.499580
+
+7. Etosha National Park - Namibia
+-18.928923, 16.374744
+
+8. Kruger National Park - South Africa
+-24.076983, 31.551281
+
+9. Addo Elephant National Park - South Africa
+-33.491990, 25.743314

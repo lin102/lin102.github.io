@@ -1,0 +1,39 @@
+
+.map {
+    width: 100%;
+    min-height: 512px;
+    border: 1px solid #dddddd;
+    background-color:rgba(169,219,216,1);
+}
+.map path {
+    cursor: pointer;
+    stroke: #455A64;
+    stroke-width: 0.8;
+    stroke-linejoin: bevel;
+}
+.map path.active {
+    stroke-width: 2.0;
+    stroke: #F44336;
+}
+.map path.mouseover{
+	fill:#FFEB3B;
+}
+.map circle {
+    fill: none;
+    pointer-events: none;
+    stroke: #000000;
+    stroke-width: 1;
+    stroke-opacity: 0.5;
+}
+#legend {
+    padding: 1.5em 0 0 1.5em;
+}
+
+li.key {
+    border-top-width: 15px;
+    border-top-style: solid;
+    font-size: .75em;
+    width: 10%;
+    padding-left: 0;
+    padding-right: 0;
+}
