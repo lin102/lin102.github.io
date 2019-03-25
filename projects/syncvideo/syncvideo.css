@@ -1,0 +1,75 @@
+	  
+       .svg-map{
+       	height: 1200px;
+       	width: 850px;
+       	margin: 0px auto;
+       
+       }
+        
+       .whole-svg:hover {
+       	
+       	transform:scale(1.05);
+       }
+       .whole-svg:hover .bgc{
+         fill:#f39c12;
+         fill-opacity: 0.5; 
+         
+       }
+       
+       #map{
+          width: 1030px;
+          height: 520px;
+          margin-left: auto;
+          margin-right: auto;
+       }
+       
+       #timer {
+       	color:red;
+       	font-weight : 100;
+       	text-align: center;
+       	font-size：20px;
+       	margin-bottom: 10px;
+       	margin-top: 10px;
+       }
+       
+       .videoframe{
+       position: relative;
+       width: 100%;
+       height: 600px;
+       margin-left: auto;
+       margin-right: auto;
+       margin-bottom: 10px;
+       }
+        #google-map {
+       	position: absolute;
+        display: inline-block;
+        right: 0px;
+        bottom: 43px;
+        width: 30%;
+        height: 45%;
+        z-index: 99;
+        opacity: 0.6;
+       }
+       #svgdiv{
+       	position: absolute;
+       	display: inline-block;
+       	width: 250px;
+       	height: 300px;
+       	left: 10px;
+       	bottom: 40px;
+       	z-index: 99;
+       	opacity: 0.5;
+       }
+       #player{
+       	position: relative;
+       	width: 100%;
+       	height: 600px;
+       	margin-left: auto;
+        margin-right: auto;
+       }
+       
+       #svgEl{
+       	width: 512px;
+       	height: 512px;
+       	
+       }

@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Lin Che</title>
+    <link rel="stylesheet" href="../../css/lin_website.css">
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAxQgEL8Q3GPJJXbJzhkYXs-KhPX1wL5s0&libraries=geometry"></script>
+    <link rel="stylesheet" href="syncvideo.css"></link> 
+  </head>
+  <body>
+  	
+	<div class="container">
+	
+	<!--Header fixed navigation bar-->
+	<nav class="row navbar fixed-top navbar-expand-sm border-bottom">
+
+	  <div class="container">
+	  <a class="navbar-brand website-name" href="../../index.html">Lin Che</a>
+	  
+	  <!-- Toggler/collapsibe Button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <!-- Navbar links -->
+	  <div class="collapse navbar-collapse nav-links" id="navbarNav">
+	    <ul class="navbar-nav">
+	      <li class="nav-item active">
+	        <a class="nav-link" href="#">Portfolio</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">Blog</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="../../about.html">About <span class="sr-only">(current)</span></a>
+	      </li>
+	    </ul>
+	  </div>
+	  </div>
+	  
+	</nav>
+	
+	
+<!--main body part-->
+  	<div class="container mainbody-container">
+  	 <div class="row">	
+	  <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"> 
+	  	<h2 class="text-center project-title" > 
+	  	 Video synchronized Map
+	  	</h2>
+	  </div>
+	  
+	  
+	  <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"> 
+	  	<h1 id="timer" style="visibility: hidden;position: absolute;" >initializing...</h1>
+	  	
+	  	<div class="videoframe">
+
+		    <iframe id="player" src="http://www.youtube.com/embed/71q-H2dVTbg?wmode=transparent&autoplay=0&controls=1&loop=0&showinfo=0&modestbranding=1&fs=0&rel=0&enablejsapi=1&playlist=" frameborder="0" allowfullscreen>
+		    </iframe>
+
+	        <div id="google-map">
+		    </div>
+		    
+		    <div id="svgdiv">
+		        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+		            width="210.2px" height="285px" viewBox="0 0 210.2 285" enable-background="new 0 0 210.2 285" xml:space="preserve">
+						
+						<g id="Layer_2">
+							<path id="svgpath" fill="none" stroke="#B5B5B6" stroke-width="5" stroke-miterlimit="10" d="M206.7,264c0,0-31.3,17.4-39.2,11.5
+								c-7.4-5.6-35.5-40.3-39.7-44S52,158.7,48.5,147.7c-3.8-11.9-6.5-21.2-8.7-28.9C37.8,112.1,8.3,6.2,8.3,6.2"/>
+						</g>
+						<g id="overlays">
+					            <circle id="svgmarker" fill="#18FFFF" stroke="#18FFFF" cx="205" cy="265" r="8"/>
+				        </g>
+	            </svg>	
+	        </div>
+        
+	  	</div>
+      </div>
+        
+        
+	
+	  	<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">   	
+		  	<h4 class="project-subtitle">Description</h4>
+		  	<p>
+		  		This work is about synchronizing the video playback
+				with a map animation which provides multiple visualization perspectives.<br>
+				Combining maps with video has the advantage of giving users a better spatial reference in mind.
+				<br><br>
+				This work is inspired by a scene in the movie, Green Book(see the shot below). While the car is running on the road, the map implies that they are moving to Ohio. This is a really small but delicate technique of filming and visualization.
+				<br><br>
+				On the left is an SVG Map and on the right is Google map.<br>
+				YouTube and Google map API is used in this work.<br>
+				The video is shooting by myself in Vienna, Austria 2018.
+				<br>
+	       </p>
+       </div>
+       <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"> 
+       	<img src="greenbook.png" alt="Green book" class="img-fluid center-block project-image">
+       </div>
+       
+    </div>
+    </div>
+  	
+  	
+    <!--footer-->
+  	<footer class="footer border-top">
+  		<div class="container">
+  		<div class="row">	
+  		<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6"> 
+  		  <h5 class="website-name">Lin Che</h5>
+  		  <a href="mailto:lin.che@tum.de">lin.che@tum.de</a>
+  		  <br>
+  		  <a href="https://github.com/lin102">lin102.github</a>
+        </div>
+       
+        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">    
+	        <div class="social">			
+						<ul>
+						<li class="facebook"><a href="https://www.facebook.com/linche102">Facebook</a></li>
+						<li class="linkedin"><a href="https://www.linkedin.com/in/linche/">LinkedIn</a></li>
+						<li class="github"><a href="https://github.com/lin102">Github</a></li>
+						<li class="twitter"><a href="https://twitter.com/linche102">Twitter</a></li>
+
+
+						</ul>		
+			    </div>
+        </div>
+        
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"> 
+        	<p class="copyright">
+        	 Copyright© 2019 Lin Che. Opinions are solely my own
+        	</p>
+        </div>	
+        
+      </div>
+  	</div>
+  	</footer>  	
+  	
+<script>
+
+	// this script uses the Youtube JS iframe API
+	// see https://developers.google.com/youtube/iframe_api_reference
+
+	var player = null,
+		duration = 0;
+	var svginterpolator = svgPathInterpolator(document.getElementById("svgpath"));
+
+    var svgmarker = document.getElementById("svgmarker");
+
+	var outputEl = document.getElementById("timer");
+
+	// this is called once the youtube API is fully loaded
+	function onYouTubeIframeAPIReady() {
+		player = new YT.Player('player', {
+			events: {
+				'onReady': onPlayerReady,
+				'onStateChange': onPlayerStateChange
+			}
+		});
+	}
+
+	// this is called once the player is set up
+	// we can start interacting with the player now...
+	function onPlayerReady(event) {
+		outputEl.textContent = "ready";
+		// start animation
+		//frame();
+	}
+
+	// this function is called every time the players state changes
+	function onPlayerStateChange(event) {
+		if(event.data == YT.PlayerState.PLAYING) {
+			//console.log("playing");
+			frame();
+		}
+		if(event.data == YT.PlayerState.PAUSED) {
+			//console.log("paused");
+			//window.cancelAnimationFrame(frame);
+		}
+	}
+
+	// our main animation function
+	// will be called repeatedly after the player is ready
+	function frame() {
+		var state = player.getPlayerState();
+		
+		if(state == YT.PlayerState.PLAYING || state == YT.PlayerState.PAUSED) {
+			if(duration == 0) {
+				duration = player.getDuration();
+				//console.log("duration: "+ duration);
+			}
+			// ############################################################
+			// TODO: update your animated map to reflect the video position
+			// ############################################################
+			var currenttime = 0;
+			currenttime = player.getCurrentTime();
+			//console.log("currenttime: " + currenttime);
+			outputEl.textContent = player.getCurrentTime() + " of " + duration;
+			
+// ------------ the position of the mark on the google map will be based on the current opsition of the time slider------------------------
+			var pos = length * currenttime / duration;
+            //console.log("pos:"+pos);
+			var coords = interpolator(pos);
+			marker.setPosition(coords);
+			}
+		
+// ------------ SVG map part------------------------
+		    //var alpha = currenttime / duration;
+		    if(duration == 0) {
+				duration = player.getDuration();
+				//console.log("duration: "+ duration);
+			}
+		    var alpha = currenttime / duration;
+            //console.log("alpha: "+alpha);
+            var svgcoords = svginterpolator(alpha);
+    
+            svgmarker.setAttribute("cx", svgcoords.x);
+            svgmarker.setAttribute("cy", svgcoords.y);
+    
+        	window.requestAnimationFrame(frame);
+}
+	// ------------------------ set up map content ------------------------
+
+	var mapOptions = {
+    center: { lat: 48.220572, lng: 16.434393 },
+    zoom: 13.8,
+    streetViewControl: false,
+    zoomControl: false,
+    mapTypeControl:false,
+    // Google customized map night style
+    styles: [
+            {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
+            {elementType: 'labels.text.stroke', stylers: [{color: '#242f3e'}]},
+            {elementType: 'labels.text.fill', stylers: [{color: '#746855'}]},
+            {
+              featureType: 'administrative.locality',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#d59563'}]
+            },
+            {
+              featureType: 'poi',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#d59563'}]
+            },
+            {
+              featureType: 'poi.park',
+              elementType: 'geometry',
+              stylers: [{color: '#263c3f'}]
+            },
+            {
+              featureType: 'poi.park',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#6b9a76'}]
+            },
+            {
+              featureType: 'road',
+              elementType: 'geometry',
+              stylers: [{color: '#38414e'}]
+            },
+            {
+              featureType: 'road',
+              elementType: 'geometry.stroke',
+              stylers: [{color: '#212a37'}]
+            },
+            {
+              featureType: 'road',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#9ca5b3'}]
+            },
+            {
+              featureType: 'road.highway',
+              elementType: 'geometry',
+              stylers: [{color: '#746855'}]
+            },
+            {
+              featureType: 'road.highway',
+              elementType: 'geometry.stroke',
+              stylers: [{color: '#1f2835'}]
+            },
+            {
+              featureType: 'road.highway',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#f3d19c'}]
+            },
+            {
+              featureType: 'transit',
+              elementType: 'geometry',
+              stylers: [{color: '#2f3948'}]
+            },
+            {
+              featureType: 'transit.station',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#d59563'}]
+            },
+            {
+              featureType: 'water',
+              elementType: 'geometry',
+              stylers: [{color: '#17263c'}]
+            },
+            {
+              featureType: 'water',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#515c6d'}]
+            },
+            {
+              featureType: 'water',
+              elementType: 'labels.text.stroke',
+              stylers: [{color: '#17263c'}]
+            }
+          ]
+};
+var mapEl = document.getElementById('google-map');
+var googlemap = new google.maps.Map(mapEl, mapOptions);
+
+var coords = [
+    {lat: 48.213321, lng: 16.441813},
+    {lat: 48.212625, lng: 16.438494},
+    {lat: 48.220042, lng: 16.428073},
+    {lat: 48.228149, lng: 16.424664}
+];
+  
+var polyline = new google.maps.Polyline({
+    path: coords,
+    geodesic: true,
+    strokeColor: '#18FFFF',
+    strokeOpacity: 1,
+    strokeWeight: 5,
+    map: googlemap
+});
+
+var marker = new google.maps.Marker({
+    position: coords[0],
+    map: googlemap,
+    icon: {
+                url: 'dot.png',
+                anchor: new google.maps.Point(15, 18),
+            }
+});
+
+// ------------------------ main program for animation ------------------------
+
+var length = google.maps.geometry.spherical.computeLength(polyline.getPath().getArray());
+    //console.log("length: "+ length);
+    
+var pos = 0;
+
+var interpolator = gPolyInterpolator(polyline);
+
+// ------------------------ interpolation function ------------------------
+
+// returns a function to interpolate along a google maps polyline / polygon 
+function gPolyInterpolator(polyline) {
+    if (!google.maps.geometry.spherical) {
+        console.error("This function requires the google.maps.geometry.spherical library!");
+        console.error("Load it as described at https://developers.google.com/maps/documentation/javascript/libraries");
+        return null;
+    }
+    
+    var path = polyline.getPath();
+    
+    return function(distance) {
+    
+        var numVertices = path.getLength();
+    
+        if (distance <= 0) return path.getAt(0);
+        if (numVertices < 2) return path.getAt(0);
+        
+        var distNext = 0,
+            distLast = 0;
+        
+        for (var i=1; (i < numVertices && distNext < distance); i++) {
+            distLast = distNext;
+            distNext += google.maps.geometry.spherical.computeDistanceBetween(path.getAt(i), path.getAt(i-1));
+        }
+        if (distNext < distance) {
+            return path.getAt(numVertices-1);
+        }
+        
+        var alpha = (distance-distLast)/(distNext-distLast);
+        
+        return google.maps.geometry.spherical.interpolate(path.getAt(i-2), path.getAt(i-1), alpha);
+    }
+}
+
+
+// ------------------------ SVG interpolation function ------------------------
+
+// SVG path interpolator - simply use methods provided by SVG path element!
+function svgPathInterpolator(pathElement) {
+
+    var length = svgpath.getTotalLength();
+    
+    return function(alpha) {
+        alpha = Math.min(1, Math.max(alpha, 0));
+        return pathElement.getPointAtLength(alpha * length);
+    }
+}
+
+</script>
+  		
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
+
