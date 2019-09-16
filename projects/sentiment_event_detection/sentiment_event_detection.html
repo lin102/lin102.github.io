@@ -49,55 +49,254 @@
   	<div class="container mainbody-container">
 	  <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"> 
 	  	<h2 class="text-center project-title" > 
-	  		<a href="https://github.com/lin102/smooth-shortest-path" > Sentiment-based spatial‐temporal event detection in social media data </a>
+	  		<a href="https://github.com/lin102/sentiment-based-spatial-temporal-event-detection-in-social-media-" > Sentiment-based spatial‐temporal event detection in social media data </a>
 	  	</h2>
 	  </div>	
 	  
 	  <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"> 
+	  
+	  
+	  	 <h4 class="project-subtitle">Abstract</h4>
+	  	 <p>The emergence of social media provides a new source of sensing society. 
+	  	 	In this thesis, a novel event detection method for detecting real-world events based on population sentiment orientation (PSO) from social media check-in data is proposed. 
+	  	 	The method is mainly composed of sentiment analysis, spatial-temporal analysis, and event extraction.
+       </p>
+       <br>
+       
+       <p>
+       The hypothesis guiding this research is that social events change PSO in the dimension of time and space. 
+       The ratio of the number of positive and negative records is chosen to indicate the PSO within a specified period and geographical area. 
+       First, different sentiment classification methods are compared and a sentiment classification model is trained. Second, spatial-temporal analysis empowers the method to detect multi-scale events in terms of time and space dimension. Specifically, the method can detect events from nationwide festivals to local activities and from annual-scale to day-scale. 
+       Furthermore, time series analysis and spatial clustering can interpret the social phenomenon of the event by mining spatial-temporal patterns. 
+       At last, A Word Cloud is used to visualize the extracted high-frequency event keywords for visually identifying the event.
+       </p>
+       
+       <br>
+	     <p>
+	     	For testing the method, a case study is conducted using Sina Weibo data in Shanghai, China, 2014. 
+	     	Events such as Chinese New Year, Mid-Autumn Festival and concerts have been successfully detected. 
+	     	Besides, the interpretation ability of this method is also tested. Main reasons for negative microblogs on the New Year’s Eve are successfully extracted. 
+	     	Traffic as one of the biggest reasons from the result, the spatial pattern of it has been discovered. Related microblogs are mainly distributed at sites of public transportation like Shanghai Pudong international airport or railway station.
+	     </p>
+	     <br>
 	  	
-	  	 <h4 class="project-subtitle">Time series anlaysis</h4>
-	  	 <img src="time_series_analysis.png" alt="Smooth Path Algorithm" class="img-fluid center-block project-image">
-	  	 <h4 class="project-subtitle">The 1st Local Max</h4>
-	  	 <img src="20140130.png" alt="Smooth Path Algorithm" class="img-fluid center-block project-image">
-	  	 <h4 class="project-subtitle">The 2nd Local Max</h4>
-	  	 <img src="20140908.png" alt="Smooth Path Algorithm" class="img-fluid center-block project-image">
-	  	 <h4 class="project-subtitle">The 3rd Local Max</h4>
-	  	 <img src="20150218.png" alt="Smooth Path Algorithm" class="img-fluid center-block project-image">
+	  	 <p>
+	  	 	Keywords: Spatial-temporal analysis, Event detection, Social media, Sentiment analysis, Machine learning, Data mining.
+	  	 </p>	
+	  	 <br>
 	  	 
-	  	 <h4 class="project-subtitle">Negative Event on the 1st New Year Eve</h4>
-	  	 <img src="20140130_negative.png" alt="Smooth Path Algorithm" class="img-fluid center-block project-image">
-	  	 <h4 class="project-subtitle">Negative Traffic point distribution</h4>
-	  	 <img src="negative_triffic.png" alt="Smooth Path Algorithm" class="img-fluid center-block project-image">
-	  	 <h4 class="project-subtitle">Negative Traffic Heat Map</h4>
-	  	 <img src="negative_traffic_heatmap.png" alt="Smooth Path Algorithm" class="img-fluid center-block project-image">
-	  	 <h4 class="project-subtitle">DBSCAN Clustering Algorithm Implementation</h4>
-	  	 <img src="DBSCAN_clustering.png" alt="Smooth Path Algorithm" class="img-fluid center-block project-image">
-	  	 <h4 class="project-subtitle">Three Clusters</h4>
-	  	 <img src="after_clustering.png" alt="Smooth Path Algorithm" class="img-fluid center-block project-image">
-	  	 <h4 class="project-subtitle">The 1st Cluster</h4>
-	  	 <img src="cluster_1.png" alt="Smooth Path Algorithm" class="img-fluid center-block project-image">
-	  	 <h4 class="project-subtitle">The 2nd Cluster</h4>
-	  	 <img src="cluster_2.png" alt="Smooth Path Algorithm" class="img-fluid center-block project-image">
-	  	 <h4 class="project-subtitle">The 3rd Cluster</h4>
-	  	 <img src="cluster_3.png" alt="Smooth Path Algorithm" class="img-fluid center-block project-image">
-	  	 <h4 class="project-subtitle">Local Event Detection</h4>
-	  	 <img src="Benz_2.png" alt="Smooth Path Algorithm" class="img-fluid center-block project-image">
-	  	 <h4 class="project-subtitle">Time series analysis</h4>
-	  	 <img src="benz_time_series.png" alt="Smooth Path Algorithm" class="img-fluid center-block project-image">
-	  	 <h4 class="project-subtitle">The 1st local Max</h4>
-	  	 <img src="first_20140101_concert.png" alt="Smooth Path Algorithm" class="img-fluid center-block project-image">
-	  	 <h4 class="project-subtitle">The 2nd local Max</h4>
-	  	 <img src="second_20140524_concert.png" alt="Smooth Path Algorithm" class="img-fluid center-block project-image">
-	  	 <h4 class="project-subtitle">The 3rd local Max</h4>
-	  	 <img src="4th_20140221_aver.png" alt="Smooth Path Algorithm" class="img-fluid center-block project-image">
-	  	 <h4 class="project-subtitle">The local Min</h4>
-	  	 <img src="5th_20140511_EXO.png" alt="Smooth Path Algorithm" class="img-fluid center-block project-image">
-         
+	  	 
+	  	 <h4 class="project-subtitle">1. Sentiment Analysis</h4>
+	  	 <img src="img/sentiment_workflow.png" alt="sentiment classification workflow" class="img-fluid center-block project-image">
+	  	 <br>
+	  	 
+	  	 <h4 class="project-subtitle">1.1 Lexicon-based Classification</h4>
+	  	 <img src="img/lexicon sources.png" alt="lexicon sources" class="img-fluid center-block project-image">
+	  	 <h4>Lexicon-based method evaluation: </h4>
+	  	 <img src="img/lexicon based method evaluation.png" alt="Lexicon-based method evaluation" class="img-fluid center-block project-image">	
+	  	 
+	  	 <h4 class="project-subtitle">1.2 Machine learning-based Classification</h4>
+	  	 <br>
+	  	 <h4> Segmentation</h4>
+	  	 <p>
+	  	  The Jieba Python library is used in this study.
+	  	 </p>
+	  	 
+	  	 <h4> Vectorization</h4>
+	  	 <p>
+	  	  By now, all the sentences can be accurately segmented. 
+	  	  The next step is converting all words into vectors.
+	  	   In this thesis, the Word2vec model is applied. Gensim, A Natural Language Processing Python library (Řehůřek, 2009) offers word2vec algorithms.
+	  	 </p>
+	  	 <br>
+	  	 
+	  	 <h4>Machine learning-based method evaluation </h4>
+	  	 <img src="img/machine learning based method evaluation.png" alt="Machine learning-based method evaluation" class="img-fluid center-block project-image">	
+	  	 
+	  	 
+	  	 <h4 class="project-subtitle">1.3 Classification Result</h4>
+	  	 <p>
+	  	 	The best result comes from the Logistic Regression Classifier. So after applying the already-trained classification on the whole data set, the result shows below.
+	  	 </p>	
+	  	 <img src="img/classification result.png" alt="Classification result" class="img-fluid center-block project-image">	
+	  	 
+	  	 <h4 class="project-subtitle">1.4 Sentiment Indicator</h4>
+	  	  <p>
+	  	 	In this thesis, the ratio of the number of positive and negative records to indicate the population sentiment orientation within a certain period of time and specified geographical area is used. 
+	  	 	The author names this indicator Population Sentiment Orientation (PSO). The equation is written as below:
+	  	 </p>	
+	  	 <img src="img/PSO indicator.png" alt="Population Sentiment Orientation Indicator" class="img-fluid center-block project-image">	
+	  	 <br>
+	  	 <br>
+	  	 
+	  	 
+	  
+	  	 <h4 class="project-subtitle">2. Spatial-temporal analysis-based event detection </h4>
+	  	 <p>
+	  	 	Spatial-temporal analysis of population sentiment orientation in this study helps to determine the time, and geographical distribution of the happened social events and the word cloud technique is used for specifically visual detect what the exact event is. 
+	  	 </p>
+	  	 <br>
+	  	 
+	  	 <h4>Events Detection</h4>
+	  	 <p>The hypothesis of time series analysis of this study    is that the global or local maxima or minima of the population sentiment orientation of the time series can indicating social events. 
+	  	 	For testing this hypothesis, the case study is designed and implemented as follows.
+        First, the whole year (minimum unit is one single day) and entire Shanghai region data to detect city-scale event happened in a day of the entire year has been used. The time series plot is shown below.
+				</p>
+				<img src="img/time series plot.png" alt="Time series plot of PSO of Shanghai, 2014" class="img-fluid center-block project-image">	
+	  	 <p>
+	  	 	In the plot, the time-series display the tendency of PSO, and in general, the PSO score is below 1.0 which is in line with common sense that people complain and express negative opinions more often in Social media. 
+	  	 	The local minima and maxima are very quickly visual detected from the plot. Therefore, the top 3 maxima points have been picked to verify the experimental hypothesis: <br>
+				(1)	18.02.2015 <br>
+				(2)	08.09.2014 <br>
+				(3)	30.01.2014 <br>
+	  	 </p>	
+	  	 <br>
+	  	 	
+	  	 <h4> Corresponding Word Clouds of the detected events</h4>
+	  	 <img src="img/20140130.png" alt="The Word Cloud of 30.01.2014, local maximum" class="img-fluid center-block project-image">	
+	  	 <img src="img/20140908.png" alt=" The Word Cloud of 08.09.2014, local maximum" class="img-fluid center-block project-image">	
+	  	 <img src="img/20150218.png" alt="The Word Cloud of 18.02.2015, local maximum" class="img-fluid center-block project-image">	
+	  	 <br>
+	  	 <h4>The keywords translation in the word clouds above</h4>
+	  	 <img src="img/wordclouds_translation.png" alt="The keywords translation in Word Cloud" class="img-fluid center-block project-image">	
+	  	 <br>
+	  	 <p>
+	  	 	The results verify the correctness of the hypothesis:<br>
+					1.	The local maxima or minima of the POS time series can be used as a social event indicator.<br>
+					2.	Abnormal population sentiment orientation value is very likely to indicate social events.<br>
+					3.	Word Cloud-based visual event detection method is intuitive and effective.<br>
+	  	 </p>
+	  	 <br>
+	  	 <br>
+	  	 
+	  	 <h4 class="project-subtitle">Small temporal scale event detection</h4>
+	  	 <p>As previously stated, this is a multi-scale spatial-temporal analysis event detection method. 
+	  	 	The time series analysis above is an annual analysis on a daily basis, so only the date of the event can be detected. 
+	  	 	In order to detect the effectiveness of this method on a fine-grained small scale data, a time series analysis of PSO on the New Year’s Eve of 2014 is conducted and the plot is drawn in the figure below.
+	  	 </p>
+	  	 <br>
+	  	 <img src="img/time_series_20140130.png" alt="Time series analysis of the New Year’s Eve of 2014" class="img-fluid center-block project-image">	
+	  	 <p>
+	  	 	From the plot, we can see that the PSO value starts going up from around 4 pm and reaches the maximum value around 8 pm. 
+	  	 	It means that people’s celebrations were mainly concentrated during this time. 
+	  	 	This result of this experiment is in line with common sense that people start preparing the dinner around 4 pm and the Spring Festival Gala begins at 8 pm every year which makes the PSO reach the peak and gradually falling after that. 
+	  	 </p>
+	  	 <br>
+	  	 
+	  	 <h4 class="project-subtitle">Small spatial scale local event detection</h4>
+	  	 <p>
+	  	 	The spatial-temporal analysis based event detection method of this study is supposed to be spatial multi-scale.
+	  	 	The Mercedes-Benz Arena has been selected, a representative spot in Shanghai, formerly known as the Shanghai World Expo Cultural Center as a case study of local event detection. 
+	  	 </p>
+	  	 <img src="img/Mercedes_benz_arena.png" alt="Time series analysis of the New Year’s Eve of 2014" class="img-fluid center-block project-image">	
+	  	 <br>
+	  	 <h4>the PSO time series plot of Mercedes-Benz Arena, 2014.</h4>
+	  	 <img src="img/pso_time_series_mercedes.png" alt="PSO time series plot of Mercedes-Benz Arena" class="img-fluid center-block project-image">	
+	  	 <p>
+	  	 	The top 3 maxima point are:<br>
+					(1) 11.01.2014 <br>
+					(2) 24.05.2014 <br>
+					(3) 21.02.2014 <br>
+        <br>
+				The minimum point is:<br>
+					(1)	11.05.2014<br>
+	  	 </p>
+	  	 
+	  	 <h4>Corresponding Word Clouds of the detected events</h4>
+	  	 <img src="img/MB_20140111.png" alt="" class="img-fluid center-block project-image">	
+	  	 <img src="img/MB_20140221.png" alt="" class="img-fluid center-block project-image">	
+	  	 <img src="img/MB_20140511.png" alt="" class="img-fluid center-block project-image">	
+	  	 <img src="img/MB_20140524.png" alt="" class="img-fluid center-block project-image">	
+	  	 <br>
+	  	 <img src="img/MB_translation.png" alt="" class="img-fluid center-block project-image">	
+	  	 
+	  	 <p>
+	  	 	From the keywords in the Word Cloud, we can know what happened and what the event was. 
+	  	 	On 11.01.2014, there must be a concert, and in the Word Cloud, there is a singer called “Dingding”. The author looked it up and proved that on 11.01.2014, famous singers Dinging Sa and Yu Qi held a concert at Mercedes-Benz Arena Shanghai. <br>
+	  	 	Similarly, Guanjie Xu held a concert on 24.05.2014, and Avril Lavigne held a show on 21.02.2014. 
+	  	 </p>
+	  	 <br>
+	  	 <p>
+	  	 	To sum up, in this subchapter some experiments and case studies to verify the effectiveness of the sentiment-based spatial-temporal event detection method has been done. 
+	  	 	Furthermore, this method can work on multi-scale spatial-temporal events. 
+	  	 	It will be demonstrated and explained in the next subchapter how this method also be used for interpreting social phenomenon.
+	  	 </p>
+	  	 <br>
+	  	 <br>
+	  	 
+	  	 <h4 class="project-subtitle">3. Spatial-temporal analysis-based event interpretation </h4>
+	  	 <p>
+	  	 	 The spatial-temporal analysis-based method of this study covers not only social event detection but also support social phenomenon mining and interpretation. 
+	  	 	 Taking the New Year’s Eve of 2014 as an example, the time series plot has shown that the PSO reaches a maximum. 
+	  	 	 Therefore, it should be possible to explore what the unhappy people are complaining about and what the adverse events are. <br>
+				 For detecting negative events, the Word Cloud based on only negative sentiment microblogs has been gathered. Figure below shows the result.
+	  	 </p>
+	  	 <img src="img/2014negative.png" alt="Negative keywords of New Year's Eve" class="img-fluid center-block project-image">	
+	  	 <p>
+	  	 	The keywords in the Word Cloud are: “Working”, “Come back home”, “No”, “cannot”, “Airport”, ”This year”, “Outside”, “Off work”, “Airplane”, “Train station”, “Subway station”, etc.<br>
+	  	 	 We can infer that some people are complaining that they are still working, some people are complaining that they haven’t returned home yet, and some are complaining about the traffic. 
+	  	 </p>
+	  	 <br>
+	  	 <p>
+	  	 	Many traffic-related words are in the Word Cloud such as “Air Plane”, “Train station”, “subway station” and ”Airport”. <br>
+	  	 	As an example, for people who were complaining about the traffic, a spatial clustering analysis on these microblogs has been performed trying to discover the geographical distribution patterns. 
+	  	 </p>
+	  	 <br>
+	  	 
+	  	 <h4>Spatial clustering analysis</h4>
+	  	 <br>
+	  	 <img src="img/traffic_point_map.png" alt="The point map of negative traffic data" class="img-fluid center-block project-image">	
+	  	 <img src="img/traffic_heat_map.png" alt="The heat map of negative traffic data" class="img-fluid center-block project-image">	
+	  	 <p>
+	  	 	To deeply mining the spatial pattern, DBSCAN is applied to the data set based on the haversine formula (distance metric).<br> 
+	  	 	Figure below is a small multiple showing the clustering results with different parameter combination. The best clustering result can be visually judged.
+	  	 </p>
+	  	 <img src="img/DBSCAN_small_multiples.png" alt="Sample multiple of clustering results" class="img-fluid center-block project-image">	
+	  	 <p>
+	  	 	The X and Y axes are representing the geographical coordinates system.<br>
+	  	  The title of each subplot is the cluster number, the parameters (Epsilon and Min_sample). The different color of the points in the plot represents a different cluster. The range of the Epsilon is from 0.5 km to 1.5 km, and the scope of the Min_sample is from 5 to 15.<br>
+	  	  From the plot, we can see that there are roughly three clusters. With the 1 km Epsilon and 15 Min_sample, the algorithm returns 3 cluster, and the clustering effect seems relatively good compared with others. Therefore, the three clusters have been placed on a map to see the spatial patterns. <br>
+	  	  Figures below are the map and the zoomed-in maps of each cluster.
+	  	 </p>
+	  	 <img src="img/cluster_map.png" alt="cluster map" class="img-fluid center-block project-image">	
+	  	 <img src="img/1st_cluster.png" alt="The 1st cluster" class="img-fluid center-block project-image">	
+	  	 <img src="img/2nd_cluster.png" alt="The 2nd cluster" class="img-fluid center-block project-image">	
+	  	 <img src="img/3rd_cluster.png" alt="The 3rd cluster" class="img-fluid center-block project-image">	
+	  	 <p>
+	  	 	With additional geographical information on the Open Street Map base map, from the figures above we can see that the first cluster is Shanghai Hongqiao International Airport and railway station region. The second cluster is Shanghai railway station region, and the third cluster is Shanghai Pudong International Airport. 
+	  	 </p>
+	  	 <br>
+	  	 
+	  	  <h4 class="project-subtitle">4. Conclusion </h4>
+	  	 <p>
+	  	 	The main innovation of this thesis is a new approach of event detection which combines sentiment analysis and spatial-temporal analysis. Moreover, this method also has the ability of event interpretation.<br>
+
+				In the thesis, the hypotheses have been verified and the research questions have been answered through experiments. Finally, the conclusions can be summarized as follows:<br>
+				
+				<br>
+				1.	Population sentiment orientation (PSO) can be used to detect events in the dimension of time and space. This further proves the validity of the fundamental hypothesis of this thesis that social events change PSO.<br>
+				<br>
+				2.	The ratio of positive and negative records of the social media can serve as an indicator for PSO. <br>
+				<br>
+				3.	This event detection method can successfully detect multi-scale events. From nationwide festival to local activity and from annual-scale to day-scale detection, the method works pretty well.<br>
+				<br>
+				4.	In general, the extrema of the time series of PSO most likely represent social events. Therefore, social events can be visually detected by the time series plot.<br>
+				<br>
+				5.	This method can also be used to interpret events. Specifically, spatial-temporal analysis of this method can help mining spatial-temporal patterns of the event. <br>
+				<br>
+				6.	From the experimental results, overall, the machine learning-based sentiment classification is better than the lexicon-based sentiment classification in terms of the given Weibo data set.<br>
+				<br>
+				7.	Spatial-temporal analysis in this thesis mainly contains time-space scale transformation, time series analysis and clustering analysis.<br>
+				<br>
+				8.	Unlike event detection for specific events, this sentiment-based event detection method does not require related keywords training set, so it can detect wider types of events.<br>
+				<br>
+	  	 </p>
+	  	 
+	  
 	  </div>
   	
   	</div>
   	
-
   	</div>
   	
   	
